@@ -21,7 +21,7 @@ public class Domino {
 		cx.setOptimizationLevel(-1);
 		cx.setLanguageVersion(Context.VERSION_1_5);
 		scope = cx.initStandardObjects();
-		//evalString("function print(message) {java.lang.System.out.println(message);}");
+		evalString("function print(message) {java.lang.System.out.println(message);}");
 		evalResource("env.rhino.js");
 		evalResource("envjs-config.js");
 //		evalResource("override-xmlhttprequest.js");
